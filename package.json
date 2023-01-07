@@ -13,7 +13,9 @@
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
 		"build:svelte": "vite build",
 		"build:electron": "electron-builder --config build.config.json --win portable",
-		"symlink:app": "ln -s /mnt/c/kit-app/apps/sveltekit/src/* /mnt/c/kit-app/shells/sveltkit-electron/src"
+		"symlink:app": "ln -s /mnt/c/kit-app/apps/sveltekit/src/* /mnt/c/kit-app/shells/sveltkit-electron/src",
+		"prepare": "npm run smui-theme-dark",
+		"smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
 	},
 	"engines": {
 		"npm": ">=7",
@@ -30,6 +32,7 @@
 		"vite-plugin-glsl": "^1.0.2"
 	},
 	"devDependencies": {
+		"@material/typography": "^14.0.0",
 		"@smui/button": "^7.0.0-beta.0",
 		"@smui/card": "^7.0.0-beta.0",
 		"@smui/layout-grid": "^7.0.0-beta.0",
@@ -52,6 +55,7 @@
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
 		"sass": "^1.53.0",
+		"smui-theme": "^7.0.0-beta.0",
 		"svelte": "^3.49.0",
 		"svelte-check": "^2.8.0",
 		"svelte-preprocess": "^4.10.7",
