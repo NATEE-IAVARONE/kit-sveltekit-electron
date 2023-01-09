@@ -9,7 +9,7 @@
 		"dev": "cross-env NODE_ENV=dev npm run dev:all",
 		"dev:all": "concurrently -n=svelte,electron -c='#ff3e00',blue \"npm run dev:svelte\" \"npm run dev:electron\"",
 		"dev:svelte": "vite dev",
-		"dev:electron": "sleep 5 && electron src/electron.cjs",
+		"dev:electron": "sleep 15 && electron src/electron.cjs",
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
 		"build:svelte": "vite build",
 		"build:electron": "electron-builder --config build.config.json --win portable",
@@ -25,6 +25,8 @@
 		"Chrome 89"
 	],
 	"dependencies": {
+		"createjs": "^1.0.1",
+		"createjs-module": "^0.8.3",
 		"electron-context-menu": "^3.3.0",
 		"electron-reloader": "^1.2.3",
 		"electron-serve": "^1.1.0",
@@ -38,6 +40,7 @@
 		"@smui/layout-grid": "^7.0.0-beta.0",
 		"@sveltejs/adapter-static": "1.0.0-next.43",
 		"@sveltejs/kit": "1.0.0-next.504",
+		"@types/createjs": "^0.0.29",
 		"@typescript-eslint/eslint-plugin": "^5.30.6",
 		"@typescript-eslint/parser": "^5.30.6",
 		"concurrently": "^7.2.2",
