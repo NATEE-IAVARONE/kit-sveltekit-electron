@@ -17,7 +17,7 @@ let mainWindow;
 
 function createWindow() {
 	let windowState = windowStateManager({
-		defaultWidth: 800,
+		defaultWidth: 360,
 		defaultHeight: 600,
 	});
 
@@ -28,8 +28,6 @@ function createWindow() {
 			x: 17,
 			y: 32,
 		},
-		minHeight: 450,
-		minWidth: 500,
 		webPreferences: {
 			enableRemoteModule: true,
 			contextIsolation: true,
@@ -40,8 +38,9 @@ function createWindow() {
 		},
 		x: windowState.x,
 		y: windowState.y,
-		width: windowState.width,
-		height: windowState.height,
+		width: 360,
+		height: 600,
+		resizable: false,
 	});
 
 	windowState.manage(mainWindow);

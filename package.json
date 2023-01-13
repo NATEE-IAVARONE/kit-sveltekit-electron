@@ -13,7 +13,8 @@
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
 		"build:svelte": "vite build",
 		"build:electron": "electron-builder --config build.config.json --win portable",
-		"symlink:app": "ln -s /mnt/c/kit-app/apps/sveltekit/src/* /mnt/c/kit-app/shells/sveltkit-electron/src",
+		"symlink:src": "ln -s /mnt/c/kit-app/apps/sveltekit/src/* /mnt/c/kit-app/shells/sveltkit-electron/src",
+		"symlink:static": "ln -s /mnt/c/kit-app/apps/sveltekit/static/* /mnt/c/kit-app/shells/sveltkit-electron/static",
 		"prepare": "npm run smui-theme-dark",
 		"smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
 	},
