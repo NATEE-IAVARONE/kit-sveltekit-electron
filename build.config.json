@@ -1,6 +1,6 @@
 {
 	"appId": "com.example.app",
-	"productName": "Svelte Electron",
+	"productName": "KIT",
 	"directories": {
 		"output": "dist"
 	},
@@ -11,5 +11,6 @@
 			"from": "build",
 			"to": ""
 		}
-	]
+	],
+	"asar": false
 }
