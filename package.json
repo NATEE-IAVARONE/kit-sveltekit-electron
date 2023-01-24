@@ -26,6 +26,7 @@
 		"Chrome 89"
 	],
 	"dependencies": {
+		"@kit-tools/chrome": "file:tools/chrome",
 		"@types/lodash": "^4.14.191",
 		"createjs": "^1.0.1",
 		"createjs-module": "^0.8.3",
@@ -46,6 +47,7 @@
 		"@sveltejs/adapter-static": "1.0.5",
 		"@sveltejs/kit": "1.2.2",
 		"@types/createjs": "^0.0.29",
+		"@types/node": "^18.11.18",
 		"@typescript-eslint/eslint-plugin": "^5.48.2",
 		"@typescript-eslint/parser": "^5.48.2",
 		"concurrently": "^7.6.0",
