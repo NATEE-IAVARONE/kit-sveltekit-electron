@@ -26,7 +26,10 @@
 		"Chrome 89"
 	],
 	"dependencies": {
-		"@kit-tools/chrome": "file:tools/chrome",
+		"@kit-tools/app-header": "file:../../apps/sveltekit/tools/app-header",
+		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
+		"@kit-tools/lang-switch": "file:../../apps/sveltekit/tools/lang-switch",
+		"@kit-tools/loc-assoc": "file:../../apps/sveltekit/tools/loc-assoc",
 		"@types/lodash": "^4.14.191",
 		"createjs": "^1.0.1",
 		"createjs-module": "^0.8.3",
