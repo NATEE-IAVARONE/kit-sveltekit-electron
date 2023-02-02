@@ -1,13 +1,15 @@
 import winston, { loggers, format, transports } from 'winston';
 
+const level = 'info';
+
 const consoleTrans = new transports.Console({
-  level: 'info',
+  level,
   format: format.simple(),
 });
 winston.add(consoleTrans);
 
 const defaultLogger = loggers.add('default', {
-  level: 'info',
+  level,
   format: format.combine(
     format.colorize(),
     format.json()
