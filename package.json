@@ -41,9 +41,12 @@
 		"formiojs": "^4.14.12",
 		"gifencoder": "^2.0.1",
 		"gridstack": "^7.2.2",
+		"lodash": "^4.17.21",
 		"lodash-es": "^4.17.21",
+		"object-treeify": "^3.3.1",
 		"vite-plugin-glsl": "^1.0.2",
-		"winston": "^3.8.2"
+		"winston": "^3.8.2",
+		"winston-daily-rotate-file": "^4.7.1"
 	},
 	"devDependencies": {
 		"@material/typography": "^14.0.0",
