@@ -27,6 +27,7 @@
 	],
 	"dependencies": {
 		"@kit-tools/app-header": "file:../../apps/sveltekit/tools/app-header",
+		"@kit-tools/checklist": "file:../../apps/sveltekit/tools/checklist",
 		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
 		"@kit-tools/lang-switch": "file:../../apps/sveltekit/tools/lang-switch",
 		"@kit-tools/loc-assoc": "file:../../apps/sveltekit/tools/loc-assoc",
@@ -46,7 +47,8 @@
 		"object-treeify": "^3.3.1",
 		"vite-plugin-glsl": "^1.0.2",
 		"winston": "^3.8.2",
-		"winston-daily-rotate-file": "^4.7.1"
+		"winston-daily-rotate-file": "^4.7.1",
+		"winston-transport": "^4.5.0"
 	},
 	"devDependencies": {
 		"@material/typography": "^14.0.0",
