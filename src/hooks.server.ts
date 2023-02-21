@@ -125,13 +125,11 @@ loggers.loggers.set('server.tool.canvas.image', canvasImageLogger);
 
 export async function handle({ event, resolve }) {
   const { method } = event.request;
-  console.log({ method });
 
   let response;
 
   if (method === 'OPTIONS') {
     response = new Response('OK', { status: 200 });
-    console.log({response});
   } else {
     response = await resolve(event);
   }

@@ -13,3 +13,4 @@ build/
 dist/
 .env
 src/lib/private/*
+logs
