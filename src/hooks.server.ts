@@ -123,13 +123,21 @@ loggers.loggers.set('server.tool.form', formLogger);
 loggers.loggers.set('server.tool.canvas', canvasLogger);
 loggers.loggers.set('server.tool.canvas.image', canvasImageLogger);
 
-// export async function handle({ event, resolve }) {
-//   if (event.url.pathname.startsWith('/custom')) {
-//     return new Response('custom response');
-//   }
-// 	serverLogger.info('handle', { event });
- 
-//   const response = await resolve(event);
+export async function handle({ event, resolve }) {
+  const { method } = event.request;
+  console.log({ method });
 
-//   return response;
-// }
+  let response;
+
+  if (method === 'OPTIONS') {
+    response = new Response('OK', { status: 200 });
+    console.log({response});
+  } else {
+    response = await resolve(event);
+  }
+  
+	response.headers.set('Access-Control-Allow-Origin', '*');
+	response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
+
+  return response;
+}
