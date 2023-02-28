@@ -6,16 +6,6 @@
     "auditLog": "logs/.65dd509906b592bd8238b3f2ee9b11fcf285f4c2-audit.json",
     "files": [
         {
-            "date": 1675864508703,
-            "name": "logs/kit-2023-02-08.log",
-            "hash": "ccea3b2d2d17a3c65317b4922358d3ee98482b053eb0793c071551390ab8dab8"
-        },
-        {
-            "date": 1675930882271,
-            "name": "logs/kit-2023-02-09.log",
-            "hash": "7aa3869547a473310f58a05e1d73b55d68ebcdfdfdd015e9cf769c8062595958"
-        },
-        {
             "date": 1676021110020,
             "name": "logs/kit-2023-02-10.log",
             "hash": "ba326fc242c0bc82b4af25a6e83ebd3b266c256f1bdd24892e818d52ff358171"
@@ -49,6 +39,41 @@
             "date": 1676934784041,
             "name": "logs/kit-2023-02-21.log",
             "hash": "c313595dea1e3f335fcacbf269ba71f54e6677c4fb759d8b69f755c5f10787de"
+        },
+        {
+            "date": 1677055511306,
+            "name": "logs/kit-2023-02-22.log",
+            "hash": "b65df891fbc7d6e09c203289ee4024daf7b1db35a7b61b3e94b222bb2baf042d"
+        },
+        {
+            "date": 1677140394652,
+            "name": "logs/kit-2023-02-23.log",
+            "hash": "5651f363a71f1089f649e4a44e26d84b37eddd6a684b205cd3c1cdf3377a27cd"
+        },
+        {
+            "date": 1677231020854,
+            "name": "logs/kit-2023-02-24.log",
+            "hash": "e14808f224ffd5e4aaef927fde7d650d00fda34445a28751ea698362cd086d80"
+        },
+        {
+            "date": 1677360670930,
+            "name": "logs/kit-2023-02-25.log",
+            "hash": "4499fc441c424e7c2508952c9f9035c4696c02a9d4b6e65ab34c306d8004202b"
+        },
+        {
+            "date": 1677367761938,
+            "name": "logs/kit-2023-02-26.log",
+            "hash": "c6a77f039d7614819884281728462a50bda08c29c2308afb5793a8ebfeed10e4"
+        },
+        {
+            "date": 1677489093042,
+            "name": "logs/kit-2023-02-27.log",
+            "hash": "7a6dd2323d88dc17a788ca512694e8c662ea57d076c0f52cf9e24df1a5a39b27"
+        },
+        {
+            "date": 1677538964371,
+            "name": "logs/kit-2023-02-28.log",
+            "hash": "438b878f5c0a725d63057590aea3e8f30f202d0ec8061c9568fbb112f4046f9f"
         }
     ],
     "hashType": "sha256"
