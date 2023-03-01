@@ -12,7 +12,8 @@
 		"dev:electron": "sleep 15 && electron src/electron.cjs",
 		"build": "cross-env NODE_ENV=production npm run build:svelte && npm run build:electron",
 		"build:svelte": "vite build",
-		"build:electron": "electron-builder --config build.config.json --win portable",
+		"build:electron": "electron-builder --config build.config.json --win portable && npm run postbuild:electron",
+		"postbuild:electron": "cp -rT ./native ./dist/win-unpacked/resources/app/node_modules",
 		"symlink:src": "ln -s /mnt/c/kit-app/apps/sveltekit/src/* /mnt/c/kit-app/shells/sveltkit-electron/src",
 		"symlink:static": "ln -s /mnt/c/kit-app/apps/sveltekit/static/* /mnt/c/kit-app/shells/sveltkit-electron/static",
 		"prepare": "npm run smui-theme-dark",
@@ -26,6 +27,7 @@
 		"Chrome 89"
 	],
 	"dependencies": {
+		"@jitsi/robotjs": "^0.6.11",
 		"@kit-tools/app-header": "file:../../apps/sveltekit/tools/app-header",
 		"@kit-tools/checklist": "file:../../apps/sveltekit/tools/checklist",
 		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
