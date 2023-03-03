@@ -35,6 +35,7 @@
 		"@kit-tools/loc-assoc": "file:../../apps/sveltekit/tools/loc-assoc",
 		"@kit-tools/pomodoro": "file:../../apps/sveltekit/tools/pomodoro",
 		"@kit-tools/spreadsheet": "file:../../apps/sveltekit/tools/spreadsheet",
+		"base32": "^0.0.7",
 		"bootstrap": "^4.6.0",
 		"createjs": "^1.0.1",
 		"createjs-module": "^0.8.3",
