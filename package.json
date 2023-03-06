@@ -31,6 +31,7 @@
 		"@kit-tools/app-header": "file:../../apps/sveltekit/tools/app-header",
 		"@kit-tools/checklist": "file:../../apps/sveltekit/tools/checklist",
 		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
+		"@kit-tools/copy-paste": "file:../../apps/sveltekit/tools/copy-paste",
 		"@kit-tools/lang-switch": "file:../../apps/sveltekit/tools/lang-switch",
 		"@kit-tools/loc-assoc": "file:../../apps/sveltekit/tools/loc-assoc",
 		"@kit-tools/pomodoro": "file:../../apps/sveltekit/tools/pomodoro",
