@@ -5,9 +5,9 @@ const path = require('path');
 const robot = require('@jitsi/robotjs');
 const base32 = require('base32');
 
-import('../index.js').then(x => {
-	console.log(`imported from "index.js":${x}`);
-}).catch(err => console.error(err));
+// import('../index.js').then(x => {
+// 	console.log(`imported from "index.js":${x}`);
+// }).catch(err => console.error(err));
 
 try {
 	require('electron-reloader')(module);
@@ -44,8 +44,10 @@ function createWindow() {
 		x: windowState.x,
 		y: windowState.y,
 		width: 360,
+		minWidth: 170 + 12,
+		maxWidth: 505 + 12,
 		height: 600,
-		resizable: false,
+		minHeight: 400,
 	});
 
 	windowState.manage(mainWindow);
