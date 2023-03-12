@@ -29,6 +29,7 @@
 	"dependencies": {
 		"@jitsi/robotjs": "^0.6.11",
 		"@kit-tools/app-header": "file:../../apps/sveltekit/tools/app-header",
+		"@kit-tools/chat": "file:../../apps/sveltekit/tools/chat",
 		"@kit-tools/checklist": "file:../../apps/sveltekit/tools/checklist",
 		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
 		"@kit-tools/copy-paste": "file:../../apps/sveltekit/tools/copy-paste",
@@ -50,6 +51,7 @@
 		"formiojs": "^4.14.12",
 		"gifencoder": "^2.0.1",
 		"gridstack": "^7.2.2",
+		"konva": "^8.4.2",
 		"lodash": "^4.17.21",
 		"lodash-es": "^4.17.21",
 		"object-treeify": "^3.3.1",
