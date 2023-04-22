@@ -34,6 +34,7 @@
 		"@kit-tools/button-enabler": "file:../../apps/sveltekit/tools/button-enabler",
 		"@kit-tools/chat": "file:../../apps/sveltekit/tools/chat",
 		"@kit-tools/checklist": "file:../../apps/sveltekit/tools/checklist",
+		"@kit-tools/choose": "file:../../apps/sveltekit/tools/choose",
 		"@kit-tools/chrome": "file:../../apps/sveltekit/tools/chrome",
 		"@kit-tools/color-dropper": "file:../../apps/sveltekit/tools/color-dropper",
 		"@kit-tools/copy-paste": "file:../../apps/sveltekit/tools/copy-paste",
